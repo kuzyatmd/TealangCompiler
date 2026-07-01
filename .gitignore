@@ -1,0 +1,14 @@
+# .gitignore
+build/
+cmake-build-*/
+.vscode/
+.idea/
+*.o
+*.obj
+*.exe
+*.out
+*.app
+.DS_Store
+Thumbs.db
+compile_commands.json
+.cache/
