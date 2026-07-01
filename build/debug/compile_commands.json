@@ -1,0 +1,56 @@
+[
+{
+  "directory": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug",
+  "command": "/usr/bin/clang++ -I/mnt/d/desktop/Tealang/TealangCompiler/src -g -std=c++23 -o CMakeFiles/tea.dir/src/compiler/Compiler.cpp.o -c /mnt/d/desktop/Tealang/TealangCompiler/src/compiler/Compiler.cpp",
+  "file": "/mnt/d/desktop/Tealang/TealangCompiler/src/compiler/Compiler.cpp",
+  "output": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug/CMakeFiles/tea.dir/src/compiler/Compiler.cpp.o"
+},
+{
+  "directory": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug",
+  "command": "/usr/bin/clang++ -I/mnt/d/desktop/Tealang/TealangCompiler/src -g -std=c++23 -o CMakeFiles/tea.dir/src/compiler/CompilerContext.cpp.o -c /mnt/d/desktop/Tealang/TealangCompiler/src/compiler/CompilerContext.cpp",
+  "file": "/mnt/d/desktop/Tealang/TealangCompiler/src/compiler/CompilerContext.cpp",
+  "output": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug/CMakeFiles/tea.dir/src/compiler/CompilerContext.cpp.o"
+},
+{
+  "directory": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug",
+  "command": "/usr/bin/clang++ -I/mnt/d/desktop/Tealang/TealangCompiler/src -g -std=c++23 -o CMakeFiles/tea.dir/src/compiler/CompilerOptions.cpp.o -c /mnt/d/desktop/Tealang/TealangCompiler/src/compiler/CompilerOptions.cpp",
+  "file": "/mnt/d/desktop/Tealang/TealangCompiler/src/compiler/CompilerOptions.cpp",
+  "output": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug/CMakeFiles/tea.dir/src/compiler/CompilerOptions.cpp.o"
+},
+{
+  "directory": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug",
+  "command": "/usr/bin/clang++ -I/mnt/d/desktop/Tealang/TealangCompiler/src -g -std=c++23 -o CMakeFiles/tea.dir/src/lexer/Lexer.cpp.o -c /mnt/d/desktop/Tealang/TealangCompiler/src/lexer/Lexer.cpp",
+  "file": "/mnt/d/desktop/Tealang/TealangCompiler/src/lexer/Lexer.cpp",
+  "output": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug/CMakeFiles/tea.dir/src/lexer/Lexer.cpp.o"
+},
+{
+  "directory": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug",
+  "command": "/usr/bin/clang++ -I/mnt/d/desktop/Tealang/TealangCompiler/src -g -std=c++23 -o CMakeFiles/tea.dir/src/main.cpp.o -c /mnt/d/desktop/Tealang/TealangCompiler/src/main.cpp",
+  "file": "/mnt/d/desktop/Tealang/TealangCompiler/src/main.cpp",
+  "output": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug/CMakeFiles/tea.dir/src/main.cpp.o"
+},
+{
+  "directory": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug",
+  "command": "/usr/bin/clang++ -I/mnt/d/desktop/Tealang/TealangCompiler/src -g -std=c++23 -o CMakeFiles/tea.dir/src/reader/Reader.cpp.o -c /mnt/d/desktop/Tealang/TealangCompiler/src/reader/Reader.cpp",
+  "file": "/mnt/d/desktop/Tealang/TealangCompiler/src/reader/Reader.cpp",
+  "output": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug/CMakeFiles/tea.dir/src/reader/Reader.cpp.o"
+},
+{
+  "directory": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug",
+  "command": "/usr/bin/clang++ -I/mnt/d/desktop/Tealang/TealangCompiler/src -g -std=c++23 -o CMakeFiles/tea.dir/src/tokens/Token.cpp.o -c /mnt/d/desktop/Tealang/TealangCompiler/src/tokens/Token.cpp",
+  "file": "/mnt/d/desktop/Tealang/TealangCompiler/src/tokens/Token.cpp",
+  "output": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug/CMakeFiles/tea.dir/src/tokens/Token.cpp.o"
+},
+{
+  "directory": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug",
+  "command": "/usr/bin/clang++ -I/mnt/d/desktop/Tealang/TealangCompiler/src -g -std=c++23 -o CMakeFiles/tea.dir/src/trace/StackTrace.cpp.o -c /mnt/d/desktop/Tealang/TealangCompiler/src/trace/StackTrace.cpp",
+  "file": "/mnt/d/desktop/Tealang/TealangCompiler/src/trace/StackTrace.cpp",
+  "output": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug/CMakeFiles/tea.dir/src/trace/StackTrace.cpp.o"
+},
+{
+  "directory": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug",
+  "command": "/usr/bin/clang++ -I/mnt/d/desktop/Tealang/TealangCompiler/src -g -std=c++23 -o CMakeFiles/tea.dir/src/trace/Trigger.cpp.o -c /mnt/d/desktop/Tealang/TealangCompiler/src/trace/Trigger.cpp",
+  "file": "/mnt/d/desktop/Tealang/TealangCompiler/src/trace/Trigger.cpp",
+  "output": "/mnt/d/desktop/Tealang/TealangCompiler/build/debug/CMakeFiles/tea.dir/src/trace/Trigger.cpp.o"
+}
+]

@@ -1,0 +1,46 @@
+{
+  "files.associations": {
+    "**/cmake/*.txt": "cmake",
+    "*.hpp": "cpp",
+    "*.cpp": "cpp"
+  },
+  // Отключаем IntelliSense от Microsoft (уже сделано)
+  "C_Cpp.intelliSenseEngine": "disabled",
+  // clangd — ТОЛЬКО языковой сервер (не форматтер!)
+  "clangd.path": "/usr/bin/clangd",
+  "clangd.arguments": [
+    "--background-index",
+    "--compile-commands-dir=${workspaceFolder}/build/debug",
+    "--completion-style=detailed",
+    "--header-insertion=never",
+    "--clang-tidy",
+    "--all-scopes-completion",
+    "--cross-file-rename",
+    "--log=error"
+  ],
+  "clangd.fallbackFlags": [
+    "-std=c++23",
+    "-I${workspaceFolder}/src"
+  ],
+  // clang-format — ОТДЕЛЬНЫЙ форматтер
+  "editor.formatOnSave": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  // CMake
+  "cmake.configureOnOpen": true,
+  "cmake.configurePreset": "debug-clang",
+  "cmake.buildPreset": "debug-clang",
+  // Search
+  "search.exclude": {
+    "**/build": true,
+    "**/.cache": true
+  },
+  "files.watcherExclude": {
+    "**/build/**": true,
+    "**/.cache/**": true
+  }
+}

@@ -1,0 +1,47 @@
+---
+Checks: >
+  -*,
+  bugprone-*,
+  cert-*,
+  clang-analyzer-*,
+  cppcoreguidelines-*,
+  modernize-*,
+  performance-*,
+  portability-*,
+  readability-*,
+  -modernize-use-trailing-return-type,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -readability-magic-numbers,
+  -cppcoreguidelines-pro-type-union-access,
+  -cppcoreguidelines-pro-bounds-array-to-pointer-decay,
+  -cppcoreguidelines-owning-memory,
+  -modernize-use-auto
+
+Fix:
+  - modernize-use-override
+  - modernize-use-using
+  - modernize-use-nullptr
+  - modernize-use-emplace
+  - modernize-use-noexcept
+  - readability-braces-around-statements
+  - readability-container-size-empty
+
+FormatStyle: file
+
+HeaderFilterRegex: '.*\.hpp$'
+
+ExtraArgs:
+  - -std=c++23
+  - -I${workspaceFolder}/src
+
+SystemHeaders: false
+
+CheckOptions:
+  # static
+  - key: readability-identifier-naming.StaticMethodCase
+    value: PascalCase
+  # constants
+  - key: readability-identifier-naming.ConstantCase
+    value: UPPER_CASE
+  - key: readability-identifier-naming.EnumConstantCase
+    value: PascalCase

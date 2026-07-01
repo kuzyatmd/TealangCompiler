@@ -1,0 +1,12 @@
+use Sys.IO;
+
+pkg Sys;
+
+Main(str[] args) -> int
+{
+    foreach(str: arg : args)
+    {
+        Sys.Out.Writeln(arg);
+    }
+    return 1;
+}

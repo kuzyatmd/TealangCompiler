@@ -1,0 +1,7 @@
+use-package Sys.IO
+set-package Sys
+declare-function 'Main' 'int'
+scope
+  call Out.Write "Hello World!\n"
+  return 1
+scope
