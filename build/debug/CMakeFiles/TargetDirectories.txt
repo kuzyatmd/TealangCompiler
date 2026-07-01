@@ -1,3 +1,0 @@
-/mnt/d/desktop/Tealang/TealangCompiler/build/debug/CMakeFiles/tea.dir
-/mnt/d/desktop/Tealang/TealangCompiler/build/debug/CMakeFiles/edit_cache.dir
-/mnt/d/desktop/Tealang/TealangCompiler/build/debug/CMakeFiles/rebuild_cache.dir
