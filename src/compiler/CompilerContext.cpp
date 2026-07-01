@@ -5,11 +5,13 @@
 
 namespace tea {
 
-CompilerContext::CompilerContext() {}
-CompilerContext::~CompilerContext() {}
+CompilerContext::CompilerContext() {
+}
+CompilerContext::~CompilerContext() {
+}
 
 uptr<CompilerContext> CompilerContext::Default() {
   return std::make_unique<CompilerContext>();
 }
 
-} // namespace tea
+}  // namespace tea

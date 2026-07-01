@@ -10,8 +10,8 @@ namespace tea {
 
 class Compiler {
  private:
-  uptr<CompilerOptions> options_;
-  uptr<CompilerContext> context_;
+  uptr<CompilerOptions> opts_;
+  uptr<CompilerContext> ctx_;
   uptr<StackTrace> stacktrace_;
 
  public:
