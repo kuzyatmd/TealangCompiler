@@ -10,7 +10,7 @@ namespace tea {
 
 class Reader {
  public:
-  static constexpr size_t BUFFER_SIZE = 4096;
+  static constexpr size_t BUFFER_SIZE = 16;
 
   Reader();
   ~Reader();

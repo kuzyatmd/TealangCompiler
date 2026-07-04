@@ -16,9 +16,18 @@ Lexer::Lexer() {
 Lexer::~Lexer() {
   tokens_.clear();
   tokens_.shrink_to_fit();
+
   DEBUG("Delete");
 }
 
+// NOTE:
+//  Lexer can produce tokens that are split for TokenType::Lexeme/Number.
+//  Parser should automatically truncate them if no tokens found between them.
+// EX:
+//  tokens: ['Hel', 'lo'] -> ['Hello']
+// but:
+//  tokens: ['Hel', ' ', 'lo'] will be the same.
+// so no TokenType::Lexeme/Number can be together
 void Lexer::Process(std::string_view buf) {
   size_t i = 0;
   unsigned char ch;

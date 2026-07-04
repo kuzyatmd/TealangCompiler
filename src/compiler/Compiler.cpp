@@ -73,49 +73,58 @@ void Compiler::PrintVersion() {
 
 static void DebugLogTokens(std::vector<Token> tokens_, Reader* reader) {
   // DEBUG ONLY
+  std::string msg;
   for (auto token : tokens_) {
     switch (token.type) {
       case TokenType::Space:
+        msg = "\' \'";
+        break;
       case TokenType::Tab:
+        msg = "\'\\t\'";
+        break;
       case TokenType::NewLine:
+        msg = "\'\\n\'";
+        break;
       case TokenType::Unknown:
         break;
 
       case TokenType::Lexeme:
         // std::cout << std::format("\'{}:{}\'\n", token.offset, token.length);
-        std::cout << std::format("\'{}\' ({}:{})\n", reader->ReadLexeme(token),
-                                 token.offset, token.length);
+        msg = std::format("\'{}\' ({}:{})\n", reader->ReadLexeme(token),
+                          token.offset, token.length);
         break;
 
       case TokenType::Number:
-        std::cout << std::format("\'{}\'\n", reader->ReadLexeme(token));
+        msg = std::format("\'{}\'\n", reader->ReadLexeme(token));
         break;
       default:
-        std::cout << std::format("\'{}\'\n", static_cast<char>(token.type));
+        msg = std::format("\'{}\'\n", static_cast<char>(token.type));
         break;
     }
+
+    std::cout << msg;
   }
 }
 
 int Compiler::Compile() {
   DEBUG("Compile Start");
-  // TODO: place Reader, Lexer, Analyzer and etc. in CompilerContext ctx
 
-  std::string_view buf;
+  std::string_view buffer;
   //
   for (auto file : opts_->input_files) {
     ctx_->reader.SetFile(file);
     ctx_->reader.Open();
 
-    // read until last
-    while (!(buf = ctx_->reader.Read()).empty()) {
-      ctx_->lexer.Process(buf);
+    // read until empty buffer
+    while (!(buffer = ctx_->reader.Read()).empty()) {
+      ctx_->lexer.Process(buffer);
     }
     auto tokens = ctx_->lexer.GetTokens();
     ctx_->reader.Reset();
     DebugLogTokens(tokens, &(ctx_->reader));
     ctx_->reader.Close();
   }
+
   // TODO: Make reader not close but change file and manage 'ifs_'
   return 0;
 }
